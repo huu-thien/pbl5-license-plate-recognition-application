@@ -1,0 +1,1840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CarLisence</class>
+ <widget class="QMainWindow" name="CarLisence">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1417</width>
+    <height>806</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Car Lisence Plate Recognition Appication</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: #f9f8fd;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="user_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-1</y>
+      <width>1421</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget {
+	background-color: #fef2f2;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="controlGate">
+     <attribute name="title">
+      <string>Control Gate</string>
+     </attribute>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1421</width>
+        <height>801</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	background-color: #E9E2F8;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(246,226,253), stop:0.886364 rgb(219,237,252));
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>30</y>
+         <width>651</width>
+         <height>691</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+	background-color: #fff;
+    border: none;
+    border-radius: 10px
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <widget class="QLineEdit" name="txtUsername">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>160</y>
+          <width>401</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 20px;
+	padding-left: 12px;
+	color: #371881;
+background-color: #f5ecf8;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>300</y>
+          <width>540</width>
+          <height>1</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	background-color: #371881;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>540</width>
+          <height>1</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	background-color: #371881;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtLicensePlate">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>240</y>
+          <width>401</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 20px;
+	padding-left: 12px;
+	color: #371881;
+	background-color: #f5ecf8;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>10</y>
+          <width>571</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(143, 0, 146, 255), stop:0.886364 rgba(0, 100, 245, 255));
+background-color: #fff;
+ 
+}</string>
+        </property>
+        <property name="text">
+         <string>INFORMATION OF PEOPLE ENTERING AND LEAVING</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	color: #371881;
+background-color: #fff;
+}</string>
+        </property>
+        <property name="text">
+         <string>Name :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>250</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	color: #371881;
+background-color: #fff;
+}</string>
+        </property>
+        <property name="text">
+         <string>License Plate :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_lisence">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>380</y>
+          <width>591</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(246,226,253), stop:0.886364 rgb(219,237,252));
+   border : none;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>330</y>
+          <width>221</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	color: #371881;
+background-color: #fff;
+}</string>
+        </property>
+        <property name="text">
+         <string>Identification System :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_AddUserControl">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>620</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	color: #371881;
+background-color: #fff;
+}</string>
+        </property>
+        <property name="text">
+         <string>Not have user info? :</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_CreateNewUser">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>610</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btn_CreateNewUser:hover:!pressed {
+    opacity: 0.7;
+	border-radius: 10px;
+}
+QPushButton#btn_CreateNewUser {
+   
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(143, 0, 146, 255), stop:0.886364 rgba(0, 100, 245, 255));
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Create User</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>50</y>
+         <width>1</width>
+         <height>681</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	background-color: #371881 !important;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>661</width>
+         <height>691</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+	background-color: #fff;
+    border: none;
+    border-radius: 10px
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QPushButton" name="btnOpen">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>560</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnOpen {
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Open</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbCamera">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>640</width>
+          <height>480</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(246,226,253), stop:0.886364 rgb(219,237,252));
+   border : none;
+border-radius : 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnCancel">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>560</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnCancel {
+   background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(241,45,55), stop:0.886364 rgba(146,65,168));
+   border : none;
+   color: white;
+   border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>10</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel { 
+	color: #342e6d;
+background-color: #fff;
+}</string>
+        </property>
+        <property name="text">
+         <string>CONTROL GATE</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>History</string>
+     </attribute>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1401</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	background-color: #E9E2F8;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(246,226,253), stop:0.886364 rgb(219,237,252));
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_32">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>1200</x>
+         <y>10</y>
+         <width>171</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	backround-color: red;
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../imageUI/images.qrc">:/icon/icon-deco.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>1010</x>
+         <y>10</y>
+         <width>161</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	backround-color: red;
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../imageUI/images.qrc">:/icon/icon-deco.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>50</y>
+         <width>441</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(143, 0, 146, 255), stop:0.886364 rgba(0, 100, 245, 255));
+
+}</string>
+       </property>
+       <property name="text">
+        <string>ENTRY AND EXIT HISTORY</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>130</y>
+         <width>1321</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+	background-color: #fff;
+    border: none;
+    border-radius: 10px
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <widget class="QTableWidget" name="tableHistory">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>120</y>
+          <width>1150</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>371</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget::item#tableHistory {
+  	text-align : center;
+  	vertical-align: middle;
+	background-color: #fff;
+	color: #371881;
+}
+
+QHeaderView, QHeaderView::section {
+    background-color: #6a4bff;
+	color: #fff;
+	font-style: bold;
+	text-align : center;
+	font-size : 18px;
+}
+QTableWidget::item:selected#tableHistory { 
+	background-color: #ffedca; 
+}background-color: #fff;</string>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerItem</enum>
+        </property>
+        <property name="columnCount">
+         <number>6</number>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>History ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>User ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Lisence Plate</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Phone Number</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Time Check-in</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="btnSearchHistory">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>30</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSearchHistory {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSortHistoryIncrease">
+        <property name="geometry">
+         <rect>
+          <x>1000</x>
+          <y>30</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSortHistoryIncrease {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Sort</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../imageUI/up-arrow.png</normaloff>../imageUI/up-arrow.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtSearchHistory">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>30</y>
+          <width>271</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 20px;
+	padding-left: 12px;
+	color: #371881;
+	background-color: #f5ecf8;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>20</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../imageUI/sort.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../imageUI/search_1.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSortHistoryDecrease">
+        <property name="geometry">
+         <rect>
+          <x>1160</x>
+          <y>30</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSortHistoryDecrease {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Sort</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../imageUI/decrease.png</normaloff>../imageUI/decrease.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cbbSortHistory">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>30</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 20px;
+	padding-left: 15px;
+	color: #371881;
+background-color: #f5ecf8;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>ID History</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Phone Number</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lisence Plate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Time Check-in</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="btnResetHistory">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>530</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnResetHistory {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnDetailsHistory">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>530</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnDetailsHistory {
+  
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(143, 0, 146, 255), stop:0.886364 rgba(0, 100, 245, 255));
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: #743de3;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Details</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnExportExcel">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>530</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnExportExcel {
+   background-color: #6a4bff;
+
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Export Excel</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>131</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	backround-color: red;
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../imageUI/images.qrc">:/icon/icons8-car-badge-96.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="User">
+     <attribute name="title">
+      <string>User</string>
+     </attribute>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>-30</x>
+        <y>0</y>
+        <width>1511</width>
+        <height>801</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+		background-color: #E9E2F8;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(246,226,253), stop:0.886364 rgb(219,237,252));
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>1361</width>
+         <height>621</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+	background-color: #fff;
+    border: none;
+    border-radius: 10px
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QTableWidget" name="tableUser">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>140</y>
+          <width>1200</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>371</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget::item#tableUser {
+  	text-align : center;
+  	vertical-align: middle;
+	background-color: #fff;
+	color: #371881;
+}
+
+QHeaderView, QHeaderView::section {
+    background-color: #6a4bff;
+	color: #fff;
+	font-style: bold;
+	text-align : center;
+	font-size : 18px;
+}
+QTableWidget::item:selected#tableUser { 
+	background-color: #ffedca; 
+}</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerItem</enum>
+        </property>
+        <property name="columnCount">
+         <number>7</number>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>AvatarUrl</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Phone Number</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Identity Card</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Plate Image Url</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Lisence Plate</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="btnAddUser">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>550</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnAddUser {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnUpdateUser">
+        <property name="geometry">
+         <rect>
+          <x>760</x>
+          <y>550</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnUpdateUser {
+   
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(0, 100, 245, 255), stop:0.886364 rgba(143, 0, 146, 255));
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: #743de3;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnDelUser">
+        <property name="geometry">
+         <rect>
+          <x>1080</x>
+          <y>550</y>
+          <width>191</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnDelUser:hover:!pressed {
+
+	border-radius: 10px;
+}
+QPushButton#btnDelUser {
+  background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(241,45,55), stop:0.886364 rgba(146,65,168));
+   border : none;
+   color: white;
+   border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtSearchUser">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>40</y>
+          <width>271</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 20px;
+	padding-left: 12px;
+	color: #371881;
+	background-color: #f5ecf8;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSearchUser">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>40</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSearchUser {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cbbSortUser">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>40</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 20px;
+	padding-left: 15px;
+	color: #371881;
+	background-color: #f5ecf8;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Phone Number</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lisence Plate</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="btnSortUserIncrease">
+        <property name="geometry">
+         <rect>
+          <x>1020</x>
+          <y>40</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSortUserIncrease {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Sort</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../imageUI/up-arrow.png</normaloff>../imageUI/up-arrow.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>30</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../imageUI/sort.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	background-color: #e7eaed;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../imageUI/search_1.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnResetUser">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>550</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnResetUser {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSortUserDecrease">
+        <property name="geometry">
+         <rect>
+          <x>1180</x>
+          <y>40</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnSortUserDecrease {
+   background-color: #743de3;
+   border : none;
+   color: white;
+   border-radius: 10px;
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgb(131,56,236), stop:0.886364 #3a86ff);
+}</string>
+        </property>
+        <property name="text">
+         <string>Sort</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../imageUI/decrease.png</normaloff>../imageUI/decrease.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+       <zorder>btnAddUser</zorder>
+       <zorder>tableUser</zorder>
+       <zorder>btnUpdateUser</zorder>
+       <zorder>btnDelUser</zorder>
+       <zorder>txtSearchUser</zorder>
+       <zorder>btnSearchUser</zorder>
+       <zorder>cbbSortUser</zorder>
+       <zorder>btnSortUserIncrease</zorder>
+       <zorder>label_8</zorder>
+       <zorder>label_12</zorder>
+       <zorder>btnResetUser</zorder>
+       <zorder>btnSortUserDecrease</zorder>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>391</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>21</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.306818 rgba(143, 0, 146, 255), stop:0.886364 rgba(0, 100, 245, 255));
+ 
+}</string>
+       </property>
+       <property name="text">
+        <string>USER MANAGERMENT </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>10</y>
+         <width>81</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>21</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../imageUI/icons-User-manager.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>970</x>
+         <y>10</y>
+         <width>161</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	backround-color: red;
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../imageUI/icon-deco.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>1230</x>
+         <y>10</y>
+         <width>161</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	backround-color: red;
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../imageUI/icon-deco.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../imageUI/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

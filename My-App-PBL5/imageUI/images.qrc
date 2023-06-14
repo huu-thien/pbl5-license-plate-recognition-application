@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>car-icon.png</file>
+    <file>icon-deco.png</file>
+    <file>icons8-car.gif</file>
+    <file>icons8-car-badge-96.png</file>
+    <file>icons-User-manager.png</file>
+    <file>user_icon_149329.png</file>
+  </qresource>
+  <qresource prefix="background">
+    <file>Audi-R8-HD-Image.jpg</file>
+  </qresource>
+</RCC>
